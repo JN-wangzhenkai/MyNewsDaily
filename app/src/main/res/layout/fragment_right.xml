@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_slidingmenu_left"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        >
+        <ImageView
+            android:id="@+id/img_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/biz_pc_main_info_profile_avatar_bg_dark"
+            />
+        <TextView
+            android:id="@+id/tv_login"
+            android:textSize="30dp"
+            android:layout_below="@+id/img_login"
+            android:text="立刻登陆"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffffff"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_right_bottom"
+        android:paddingBottom="150dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <TextView
+            android:id="@+id/update_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新版本"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10dip"
+            android:background="@mipmap/share_little_bg"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/fun_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15.0dip"
+                android:background="@mipmap/fun_share_weixin" />
+
+            <ImageView
+                android:id="@+id/fun_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:background="@mipmap/addimport_qq" />
+
+             />
+
+            <ImageView
+                android:id="@+id/fun_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@mipmap/fun_share_weibo" />
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/btn_share"
+            android:text="一键分享"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/biz_pc_main_info_profile_avatar_bg_dark" />
+
+        <TextView
+            android:id="@+id/menu_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="哈哈哈"
+            android:textColor="#ffffffff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

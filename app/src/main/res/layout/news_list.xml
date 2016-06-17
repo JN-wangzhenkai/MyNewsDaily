@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/news_img1"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/defaultpic"
+        />
+    <TextView
+        android:id="@+id/new_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/news_img1"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:text="Title"
+        android:textColor="#000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        />
+    <TextView
+        android:text="descdescdescdescdescdescdescdescdesc"
+        android:id="@+id/news_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@+id/new_tv_title"
+        android:layout_toRightOf="@+id/news_img1"
+        android:paddingLeft="10dp"
+        android:textColor="#ff666666"
+        android:scrollHorizontally="true"
+        />
+    <TextView
+        android:id="@+id/news_tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="来源："
+        android:textColor="#ff666666"
+        android:textSize="10sp"
+        android:layout_toLeftOf="@+id/news_tv_time"
+        android:layout_alignBottom="@+id/news_img1"
+        android:layout_alignBaseline="@+id/news_tv_time"
+        />
+    <TextView
+        android:id="@+id/news_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:textColor="#ff666666"
+        android:layout_marginRight="15dp"
+        android:layout_alignBottom="@+id/news_img1"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp"
+        />
+
+</RelativeLayout>

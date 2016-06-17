@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.example.mynewsdaily"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven { url "http://jzaccone.github.io/SlidingMenu-aar" }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.jeremyfeinstein.slidingmenu:library:1.3@aar'
+    compile files('libs/libs/MobCommons-2016.0426.1819.jar')
+    compile files('libs/libs/MobTools-2016.0426.1819.jar')
+    compile files('libs/libs/ShareSDK-Alipay-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Core-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Douban-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Dropbox-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Email-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Evernote-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Facebook-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-FacebookMessenger-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Flickr-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Foursquare-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-GooglePlus-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Instagram-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Instapaper-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-KaiXin-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Kakao-Core-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-KakaoStory-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-KakaoTalk-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Line-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Linkedin-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Mingdao-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Pinterest-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Pocket-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-QQ-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-QZone-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Renren-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-ShortMessage-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-SinaWeibo-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-TencentWeibo-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Tumblr-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Twitter-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-VKontakte-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Wechat-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Wechat-Core-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Wechat-Favorite-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Wechat-Moments-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-WhatsApp-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Yixin-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Yixin-Core-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-Yixin-Moments-2.7.2.jar')
+    compile files('libs/libs/ShareSDK-YouDao-2.7.2.jar')
+}

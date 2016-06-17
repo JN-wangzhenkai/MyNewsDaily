@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WebActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#ffaa0000"
+        >
+        <TextView
+            android:id="@+id/web_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffffff"
+            android:text="资讯"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <!--调用系统的字符样式 ？代表有就调用没有就用默认-->
+
+        <ImageView
+            android:id="@+id/web_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/web_img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:src="@mipmap/news_menu"
+
+            />
+        <TextView
+            android:id="@+id/web_text_follow"
+            android:text="跟帖"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/web_tv1"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/web_img_menu"
+            android:background="#eecccccc"
+            android:textColor="#ff000000"
+            />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/webshow_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+</LinearLayout>
